@@ -5,7 +5,8 @@ body {
   line-height: 1.5;
 }
 .container1 {
-  width: 1170px;
+  width: 100%;
+  width: 100%;
   margin: 0px auto;
 }
 /* ===== Header-top ======== */
@@ -169,4 +170,56 @@ ul#menu-list li:hover a {
   font-size: 30px;
   padding-top: 10px;
   padding-right: 10px;
+}
+/* =======Tex-column ======= */
+#text-column {
+  background-color: #ffffff;
+  background-size: initial;
+  display: flex;
+}
+#text-column form {
+  background-color: white;
+  margin-left: 5%;
+  position: relative;
+  border-radius: 1rem;
+  margin: 5%;
+  box-shadow: 1px 1px 1px 5px #d6d6d6;
+}
+form label {
+  position: absolute;
+  outline: none;
+  color: #858585;
+  left: 2rem;
+}
+.input-group {
+  margin: 1rem 1.5rem;
+  outline: none;
+}
+button {
+  user-select: none;
+}
+#text-column form button {
+  margin: 10px;
+  background-color: #7c4dff;
+  width: 90%;
+  border-radius: 2em;
+  height: 3em;
+  border: 1px solid #7c4dff;
+  outline: none;
+  border: none;
+}
+#text-column h5 {
+  text-align: left;
+  margin: 1em 2em;
+}
+#text-column h2 {
+  margin: 5%;
+  font-size: 1.5em;
+  height: 50px;
+}
+#text-column h5 {
+  display: flex;
+}
+input:focus + label {
+  color: white;
 }
