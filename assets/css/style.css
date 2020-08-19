@@ -13,7 +13,7 @@ body {
 #header {
   background-image: url("../image/10.png");
   background-size: contain;
-  padding: 15px 0px;
+  
 }
 #header-menu {
   flex-wrap: nowrap;
@@ -171,11 +171,20 @@ ul#menu-list li:hover a {
   padding-top: 10px;
   padding-right: 10px;
 }
-/* =======Tex-column ======= */
+/* =======Tex-column -Right ======= */
 #text-column {
   background-color: #ffffff;
   background-size: initial;
   display: flex;
+}
+#text-column form input {
+  /* border: none; */
+  display: block;
+  margin: px auto;
+  border: 1px solid #c5c5c5;
+  border-radius: 2p;
+  outline: none;
+  padding: 6px 6px;
 }
 #text-column form {
   background-color: white;
@@ -187,12 +196,26 @@ ul#menu-list li:hover a {
 }
 form label {
   position: absolute;
-  outline: none;
-  color: #858585;
-  left: 2rem;
+  left: 4px;
+  top: 4px;
+  font-weight: 300;
+  font-size: 15px;
+  pointer-events: none;
+  color: gray;
+  transition: 200ms ease;
+}
+form #input-group img {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  font-weight: 300;
+  font-size: 15px;
+  pointer-events: none;
+  transition: 200ms ease;
 }
 .input-group {
   margin: 1rem 1.5rem;
+  position: relative;
   outline: none;
 }
 button {
@@ -220,6 +243,68 @@ button {
 #text-column h5 {
   display: flex;
 }
-input:focus + label {
+
+.column-top {
+  margin-top: 4rem;
+  height: 10rem;
+}
+.column-top p:first-child {
+  font-size: 6rem;
+  font-weight: bold;
+  flex-grow: 1;
+}
+.column-top p:nth-child(2) {
+  color: #858585;
+  font-size: 3.4rem;
+}
+input:focus + label,
+input:valid + label {
+  left: -10em;
   color: white;
+}
+input:focus + img,
+input:valid + img {
+  visibility: hidden;
+}
+
+#input-group label img {
+  position: absolute;
+}
+#column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#body-wrapper {
+  margin-top: 10%;
+  display: flex;
+  text-align: left;
+}
+.parafont {
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  user-select: none;
+  /* margin: 50px; */
+}
+/* =======Tex-column-center-right ======= */
+/* #column-center{
+  display: flex;
+  flex-wrap: wrap;
+  font-size:1.5rem;
+} */
+
+/*  Meida */
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  header nav li {
+    margin: 0 7px;
+  }
 }
