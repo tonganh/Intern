@@ -1,99 +1,95 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #34495e;
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-ul,
-nav {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-}
-header {
+.box {
+  width: 281px;
+  padding: 40px;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: red;
-  padding: 35px 100px 0;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 15px;
 }
-header nav li {
-  margin: 0 15px;
-}
-header nav {
-  display: flex;
-}
-header nav li:first-child {
-  margin-left: 0;
-}
-header nav li:last-child {
-  margin-right: 0;
-}
-@media (max-width: 1000px) {
-  header {
-    padding: 20px 50px;
-  }
-}
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-  header nav li {
-    margin: 0 7px;
-  }
-}
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 110px 100px;
-}
-@media (max-width: 1000px) {
-  section {
-    padding: 100px 50px;
-  }
-}
-section p {
-  max-width: 800px;
-  text-align: center;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  line-height: 2;
-}
-.banner-area {
-  position: relative;
-  justify-content: center;
-  min-height: 100vh;
+form a {
+  background: #da4b29;
   color: #fff;
+  display: block;
+  font-size: 20px;
+  margin-top: 25px;
+  padding: 15px 80px;
+  text-decoration: none;
+  text-transform: none;
+}
+form {
+  position: absolute;
+}
+form input {
+  width: 263px;
+}
+.inputlocation {
+  position: relative;
+}
+form button {
+  margin: 10px;
+  background-color: #7c4dff;
+  width: 90%;
+  border-radius: 2em;
+  height: 3em;
+  color: white;
+  border: 1px solid #7c4dff;
+  outline: none;
+  position: relative;
+}
+form button:hover {
+  cursor: pointer;
+}
+form button:focus {
+  border: 2px solid green;
+  transition: all 1s;
+}
+.test {
+  position: relative;
+}
+button i {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  /* /* padding: 9px 8px; */
+  padding: 0;
+}
+.textbox {
+  margin: 10px;
+}
+.textbox i {
+  width: 26px;
   text-align: center;
-}
-.banner-area .banner-img {
-  background-color: aqua;
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  z-index: -1;
+  right: 49px;
 }
-b.banner-area .banner-img:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-attachment: #000;
-  opacity: 0.8;
+
+.textobx input {
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 20px;
+  margin-left: -24px;
+  ;
+}
+input:focus label {
+  opacity: 0;
+}
+.Dieukhoan{
+  display: flex;
+  position: relative;
+}
+.Dieukhoan input{
+  flex: 1;
+}
+.Dieukhoan label{
+  flex: 7;
+  margin-top: 9px;
 }
