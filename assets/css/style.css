@@ -320,51 +320,46 @@ input:valid + img {
 #Desktop {
   background-image: url("../image/1.png");
   background-size: cover;
-  box-sizing: border-box;
-  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -114px;
+  margin-bottom: 30px;
+}
+#header-desktop-left {
+  flex: 2;
+}
+#header-desktop-right {
+  flex: 1;
+}
+/* Desktop main */
+#desktop-main {
+  display: flex;
+  position: relative;
+}
+#desktop-main #img {
+  width: 970px;
+  height: 569px;
+  z-index: 1;
+}
+#desktop-main #img img {
   width: 100%;
-  border-bottom: 5px solid #c1c1c1;
-  padding-bottom: 10%;
-  margin-bottom: -30%;
-}
-/* Top */
-#Desktop-top {
-  padding-top: 7%;
-  padding-left: 10%;
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-}
-#Desktop-top-left {
-  flex: 1.6;
-  margin-left: -177px;
-}
-#Desktop-top-right {
-  flex: 1;
-  display: flex;
-  justify-content: space-around;
-}
-#Desktop-top-left p {
-  font-size: 32px;
-  color: #858585;
-}
-#Desktop-top-left h3 {
-  font-size: 64px;
-}
-.AppStore {
-  background-image: url("../image/Appstore.png");
-  background-repeat: no-repeat;
-  align-items: center;
-  flex: 1;
-}
-.WebApp {
-  background-image: url("../image/Webapp.png");
-  background-repeat: no-repeat;
-  flex: 1;
-}
-
-#simple-id #img img {
-  width: 130%;
   height: auto;
+  z-index: -1;
+}
+.feature-background {
+  background-color: red;
+}
+.feature {
+  border-radius: 50%;
+  background-color: #ebd5fd;
+}
+.inside-picture {
+  position: absolute;
+}
+#plans {
+  background-image: url("../image/linhtinh.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* margin-top: -114px; */
 }
