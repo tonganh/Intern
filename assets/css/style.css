@@ -14,6 +14,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 6px solid #9da29d;
+  user-select: none;
 }
 #header-menu {
   flex-wrap: nowrap;
@@ -175,12 +176,15 @@ ul#menu-list li:hover a {
   padding-right: 10px;
 }
 
+/* Text column */
+
 #text-column {
   background-color: #ffffff;
   background-size: initial;
   display: flex;
   margin-bottom: 0;
   padding-bottom: 5em;
+  user-select: none;
 }
 #text-column form input {
   /* border: none; */
@@ -316,7 +320,9 @@ input:valid + img {
   font-size: 18px;
   color: #5c5c5c;
 }
+
 /* Desktop */
+
 #Desktop {
   background-image: url("../image/1.png");
   background-size: cover;
@@ -327,10 +333,10 @@ input:valid + img {
   padding-bottom: 99px;
 }
 #header-desktop-left {
-  flex: 2;
+  width: calc(2 * 100% / 3);
 }
 #header-desktop-right {
-  flex: 1;
+  width: calc(100% / 3);
 }
 /* Desktop main */
 #desktop-main {
@@ -422,6 +428,11 @@ input:valid + img {
   outline: none;
   border: none;
 }
+#main-plan form:hover {
+  transform: scale(1.1);
+  transition: all 300ms;
+  user-select: none;
+}
 /* #main-plan form > p:nth-child(2) {
   font-size: 32px;
   font-weight: 500;
@@ -479,7 +490,7 @@ footer {
 } */
 footer {
   background-image: url("../image/footer.png");
-  background-size:contain;
+  background-size: contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -488,7 +499,7 @@ footer {
   height: 432px;
   width: auto;
   /* box-sizing: border-box; */
-    /* height: 452px; */
+  /* height: 452px; */
 }
 /* Footer header */
 #footer-header {
@@ -512,20 +523,25 @@ footer {
   margin-right: 40px;
 }
 /* Footer bottom */
-#footer-bottom{
-  /* margin-top: 45px; */
-}
-#footer-bottom-left{
+
+#footer-bottom-left {
   width: 50%;
 }
-#footer-bottom-right{
+#footer-bottom-right {
   width: 50%;
 }
-#information-figma{
+#information-figma {
   display: flex;
   justify-content: space-around;
 }
-#information-figma>div p{
+#information-figma > div a {
   font-size: 14px;
   color: #333333;
+  padding: 7px;
+}
+#information-figma > div a:hover {
+  color: blue;
+}
+#information-figma > div a:active {
+  color: red;
 }
